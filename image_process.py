@@ -48,11 +48,7 @@ videoName = 'imageToVideo.mp4'
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')
 #initialize video writer
 video = cv2.VideoWriter(videoName,fourcc,fps,(200,200))
-print(imgNameList)
-for image in imgNameList:
-    decision = image.find(keywordValue)
-    if decision !=-1:
-        print(image)
+
 #add targeted images to the video
 for image in imgNameList:
     decision = image.find(keywordValue)
